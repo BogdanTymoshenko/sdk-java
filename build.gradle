@@ -1,0 +1,21 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+version = '0.2'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest.attributes provider: 'gradle'
+}
+
+dependencies {
+    compile 'com.googlecode.json-simple:json-simple:1.1.1'
+    compile 'net.iharder:base64:2.3.8'
+
+    testCompile 'junit:junit:4.10'
+}

@@ -1,15 +1,14 @@
 package com.liqpay;
 
+import net.iharder.Base64;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
 import java.security.MessageDigest;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
-
-import javax.xml.bind.DatatypeConverter;
-
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 
 public class LiqPayUtil {
     public static byte[] sha1(String param) {
@@ -25,7 +24,7 @@ public class LiqPayUtil {
     }
 
     public static String base64_encode(byte[] bytes) {
-        String str = DatatypeConverter.printBase64Binary(bytes);
+        String str = Base64.encodeBytes(bytes);
         return str;
     }
 

@@ -4,7 +4,7 @@
     <artifactId>liqpay-sdk</artifactId>
     <packaging>jar</packaging>
     <name>LiqPay API</name>
-    <version>0.1</version>
+    <version>0.2</version>
     <url>https://www.liqpay.com/ru/doc</url>
     <licenses>
         <license>
@@ -27,6 +27,11 @@
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
             <version>1.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>net.iharder</groupId>
+            <artifactId>base64</artifactId>
+            <version>2.3.8</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
